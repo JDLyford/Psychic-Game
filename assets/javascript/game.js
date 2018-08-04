@@ -13,13 +13,8 @@ function myfunction() {
     console.log(computerGuess);
 };
 
-document.getElementById("guessesLeft").innerHTML = guessesLeft;
-document.getElementById("wins").innerHTML = wins;
-document.getElementById("losses").innerHTML = losses;
-document.getElementById("userGuesses").innerHTML = "none";
-
 document.onkeyup = function(event) {
-    var userGuess = String.fromCharCode(event.keyCode).toUpperCase();
+    var userGuess = " " + String.fromCharCode(event.keyCode).toUpperCase();
     userGuesses.push(userGuess);
     document.getElementById("userGuesses").innerHTML = userGuesses;
     console.log(userGuess);
